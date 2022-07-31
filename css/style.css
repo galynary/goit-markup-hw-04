@@ -33,7 +33,7 @@ body {
     margin: 0 auto;
     width: 1200px;
     padding: 0px 15px;
-    outline: 2px solid rgb(228, 208, 208);
+    /* outline: 2px solid rgb(228, 208, 208);*/
 }
 .header,
 .header-nav,
@@ -249,6 +249,14 @@ body {
     text-align: center;
     background-color: #2f303a;
     padding: 200px 0px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)),
+        url(../images/studio/hero-Img.jpg);
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    background-size: cover;
 }
 .studio-title {
     font-size: 44px;
