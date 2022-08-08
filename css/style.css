@@ -242,16 +242,25 @@ body {
     letter-spacing: 0.03em;
 }
 .portfolio-list-item {
-    width: 370px;
     background: #ffffff;
 }
+
 .wrap-portfolio-text {
-    margin-top: 0px;
     padding: 24px;
+    margin-top: 0px;
     border-top: none;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
+}
+.wrap-portfolio-text:hover,
+.wrap-portfolio-text:focus {
+    background: #ffffff;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /*--подвал--*/
@@ -284,6 +293,7 @@ body {
 }
 .footer-iner {
     display: flex;
+    align-items: baseline;
 }
 .footer-icons {
     margin-left: 94px;
@@ -324,6 +334,7 @@ body {
         ),
         url('../images/studio/hero-Img.jpg');
     background-repeat: no-repeat;
+    background-position: center;
     max-width: 1600px;
     width: 100%;
     height: 600px;
@@ -383,28 +394,17 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.advantages-image::before {
-    display: block;
-    content: '';
+.advantages-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
     height: 120px;
     background-color: #f5f4fa;
-    background-repeat: no-repeat;
-    background-position: center;
+    border-radius: 4px;
+    cursor: pointer;
     margin-bottom: 30px;
 }
-.advantages-image.icon1::before {
-    background-image: url('../images/icons.svg/antenna.svg');
-}
-.advantages-image.icon2::before {
-    background-image: url('../images/icons.svg/clock.svg');
-}
-.advantages-image.icon3::before {
-    background-image: url('../images/icons.svg/diagram.svg');
-}
-.advantages-image.icon4::before {
-    background-image: url('../images/icons.svg/astronaut.svg');
-}
-
 .advantages-title {
     font-size: var(--text-font-size);
     line-height: 1.14;
@@ -433,6 +433,7 @@ body {
     color: var(--text-color);
     line-height: 1.17;
     letter-spacing: 0.03em;
+    margin-bottom: 16px;
 }
 .section.section-work {
     padding-top: 0px;
@@ -493,7 +494,6 @@ body {
     justify-content: center;
     gap: 10px;
     cursor: pointer;
-    margin-bottom: 30px;
 }
 .clients-list {
     display: flex;
